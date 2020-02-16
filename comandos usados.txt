@@ -1,0 +1,46 @@
+pi@raspberrypi:~ $ history
+
+comando de abrir o teclado na tela
+
+    1  cd Desktop
+    2  chmod +x keyboard.sh
+    3  exiyt
+    4  exit
+
+comando para instalar o servidor unified remote
+
+    5  sudo apt-get install urserver
+    6  wget -O urserver.deb http://www.unifiedremote.com/d/rpi-deb
+    7  sudo dpkg -i urserver.deb
+    8  exit
+
+comando para instalar VLC para transmitir video
+
+    9  sudo apt-get install vlc
+   19  /root/.vnc/config.d/vncserver-x11
+   20  sudo /root/.vnc/config.d/vncserver-x11
+   21  raspivid -o - -t 0 -hf -w 800 -h 400 -fps 24 |cvlc -vvv stream:///dev/stdin --sout '#standard {access=http,mux=ts,dst=:8160}' :demux=h264
+   22  sudo raspi-config
+   24  raspivid -o - -t 0 -hf -w 800 -h 400 -fps 24 |cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8160}' :demux=h264
+   29  raspistill -v -o test.jpg
+   30  sudo apt-get update
+   31  sudo apt-get upgrade
+   32  raspistill -v -o test.jpg
+   33  sudo raspi-config
+   34  raspistill -v -o test.jpg
+   35  raspivid -o - -t 0 -hf -w 800 -h 400 -fps 24 |cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8160}' :demux=h264
+   36  raspivid -o - -t 0 -hf -w 480 -h 320 -fps 60 |cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8160}' :demux=h264
+   37  raspivid -o - -t 0 -hf -w 480 -h 320 -fps 40 |cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8160}' :demux=h264
+   38  raspivid -o - -t 0 -hf -w 320 -h 240 -fps 30 |cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8160}' :demux=h264
+
+   39  ping www.google.com
+   40  pinout
+
+   44  sudo apt-get install lirc
+
+comando editar arquivo rc.local para inicialização do script automaticamente no boot
+
+   55  sudo nano /etc/rc.local
+
+
+
